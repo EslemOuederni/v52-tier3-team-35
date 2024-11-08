@@ -44,8 +44,7 @@ coding!
 - Abdulsamad Yusuf : [GitHub](https://github.com/samad13) / [LinkedIn](www.linkedin.com/in/abdulsamad-yusuf-ba0064178)
 - Fouad Tabbara #3: - Yay!
 - Anna Veselova #4: [GitHub](https://github.com/AnyaVeselova) / [LinkedIn](https://www.linkedin.com/in/anna-veselova-3640752a0/)
-  ...
-- Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Albert Ngodi #5: [GitHub](https://github.com/ngodi) / [LinkedIn](https://linkedin.com/in/albertngodi)
 
 ## Installation guide
 
