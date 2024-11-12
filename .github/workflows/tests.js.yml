@@ -15,7 +15,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./solar-friend
+        working-directory: ./suncityla
     strategy:
       matrix:
         node-version: [22.x]
