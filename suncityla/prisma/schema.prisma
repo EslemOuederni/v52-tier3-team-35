@@ -1,0 +1,24 @@
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+// This is an example schema. You can use it as a starting point to create your own schema.
+model Admin {
+    id       String @id @unique @default(uuid())
+    username String @unique
+    password String
+}
+
+model Booking {
+    id               String   @id @unique @default(uuid())
+    customerName     DateTime
+    customerAddress  String
+    customerTown     String
+    cusomterPostcode String
+    bookingDate      DateTime
+}

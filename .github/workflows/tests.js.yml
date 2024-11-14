@@ -15,12 +15,13 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./solar-friend
+        working-directory: ./suncityla
     strategy:
       matrix:
         node-version: [22.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+    env: # Env variables needed during build
+      DATABASE_URL:  ${{secrets.DATABASE_URL}}
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
@@ -28,5 +29,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
+      - run: echo ${{ env.DATABASE_URL }}
       - run: npm run build --if-present
+        env:
+          DATABASE_URL: ${{ env.DATABASE_URL }}
       - run: npm test

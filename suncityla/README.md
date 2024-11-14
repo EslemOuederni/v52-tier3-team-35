@@ -34,3 +34,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Prisma ORM
+
+This project uses [Prisma](https://prisma.io) as an ORM. You can find the Prisma schema in `prisma/schema.prisma`.
+
+Please contact one of the team members for access to the development database. They will supply you with a connection URL.
+
+Copy the entry for `DATABASE_URL` in the `.example.env` and paste it into the `.env.local` file. Replace the placeholder with the connection URL supplied by the team member.
+
+Once you have done this, you can update the database schema by running:
+
+```bash
+npm run prisma:update
+```
+
+To view data in the database, run:
+
+```bash
+npm run prisma:studio
+```
+
+The Prisma Client must be updated everytime there is a change to the models.
+To generate the Prisma client, run:
+
+```bash
+npm run prisma:generate
+```
+
+Migrations are used to update the database schema.
+To run a migration, run:
+
+```bash
+npm run prisma:migrate
+```
