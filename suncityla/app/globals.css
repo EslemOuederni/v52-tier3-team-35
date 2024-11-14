@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 :root {
   --background: #ffffff;
@@ -13,7 +14,7 @@
 
 body{
   background-color: var(--background);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-bg {
@@ -50,6 +51,18 @@ body{
   background-color: var(--btn-background);
 }
 
-.about{
+.heading{
   color:var(--heading-color)
+}
+
+.card{
+  background-color: var(--card-background);
+  color: var(--primary-color);
+  width: 283px;
+  height: 380px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
