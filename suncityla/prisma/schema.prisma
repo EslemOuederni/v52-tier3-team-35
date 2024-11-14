@@ -9,8 +9,16 @@ generator client {
 
 // This is an example schema. You can use it as a starting point to create your own schema.
 model Admin {
-    id       Int     @id @default(autoincrement())
-    username String  @unique
+    id       String @id @unique @default(uuid())
+    username String @unique
     password String
-    name     String?
+}
+
+model Booking {
+    id               String   @id @unique @default(uuid())
+    customerName     DateTime
+    customerAddress  String
+    customerTown     String
+    cusomterPostcode String
+    bookingDate      DateTime
 }

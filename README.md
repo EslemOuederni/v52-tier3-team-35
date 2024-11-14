@@ -37,14 +37,12 @@ your repo access and to practice PR'ing with your team _before_ you start
 coding!
 
 - Isslem Ouederni #1: [GitHub](https://github.com/EslemOuederni) / [LinkedIn](https://www.linkedin.com/in/isslem-ouederni-858a13182/)
-- Mariana Farcas #2: [GitHub](https://github.com/MarianaFarcas) / [LinkedIn](https://linkedin.com/in/mariana-f-6592661b5)
-- Fouad Tabbara - Yay!
-  ...
+- Mariana Farcas #2: [GitHub](https://github.com/MarianaFarcas) / [LinkedIn](https://linkedin.com/in/mariana-f-6592661b5) ...
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
 - Abdulsamad Yusuf : [GitHub](https://github.com/samad13) / [LinkedIn](www.linkedin.com/in/abdulsamad-yusuf-ba0064178)
-- Fouad Tabbara #3: - Yay!
 - Anna Veselova #4: [GitHub](https://github.com/AnyaVeselova) / [LinkedIn](https://www.linkedin.com/in/anna-veselova-3640752a0/)
 - Albert Ngodi #5: [GitHub](https://github.com/ngodi) / [LinkedIn](https://linkedin.com/in/albertngodi)
+- Fouad Tabbara #3: - [GitHub](https://github.com/fmtabbara) 🥷
 
 ## Installation guide
 
