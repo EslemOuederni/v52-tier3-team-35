@@ -39,17 +39,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 This project uses [Prisma](https://prisma.io) as an ORM. You can find the Prisma schema in `prisma/schema.prisma`.
 
-To get started, start a local postgres server, create a database and call it SunCityLA.
-An example of the connection URL is in the `.example.file` file.
+Please contact one of the team members for access to the development database. They will supply you with a connection URL.
 
-Once the database is set up, run the following command to create some test data:
+Copy the entry for `DATABASE_URL` in the `.example.env` and paste it into the `.env.local` file. Replace the placeholder with the connection URL supplied by the team member.
+
+Once you have done this, you can update the database schema by running:
 
 ```bash
 npm run prisma:update
-```
-
-```bash
-npm run prisma:seed
 ```
 
 To view data in the database, run:
