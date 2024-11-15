@@ -6,7 +6,7 @@ export default function Footer(){
             <p>v52-tier3-team-35 </p>
             <div className=" flex flex-row justify-between gap-32 mt-4">
                 <div>
-                    <p className="devs">Developers:
+                    <div className="devs">Developers:
                         <div>
                             <p>
                                 Isslem Ouederni #1: 
@@ -38,7 +38,7 @@ export default function Footer(){
                                 <a href="https://github.com/fouadtabbara" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </p>
                         </div>
-                    </p>
+                    </div>
                 </div>
                 <div className="links">
                     <h3 className="font-bold text-lg mb-4">Useful Links</h3>
