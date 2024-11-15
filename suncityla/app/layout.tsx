@@ -30,6 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex gap-1 underline">
+          <Link href="/">Home</Link>
           <Link href="/admins">Admins</Link>
           <Link href="/bookings">Bookings</Link>
         </div>
