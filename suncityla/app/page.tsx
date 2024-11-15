@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/How It Works/HowItWorks";
 
@@ -10,6 +11,7 @@ export default async function Home() {
         <p className="text-lg text-black w-[600px]">SunCityLA is project that provides a free service where a city-hired specialist  evaluates the installation and maintenance costs of solar panels.</p>
       </section>
       <HowItWorks/>
+      <Footer/>
     </>
   );
 }
