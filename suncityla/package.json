@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && prisma generate",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "test": "vitest",
@@ -12,7 +12,8 @@
     "prisma:migrate": "prisma migrate dev",
     "prisma:update": "npm run prisma:generate && npm run prisma:migrate",
     "prisma:studio": "prisma studio",
-    "prisma:seed": "prisma db seed"
+    "prisma:seed": "prisma db seed",
+    "build:vercel": "npm run build && npm run prisma:generate"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
