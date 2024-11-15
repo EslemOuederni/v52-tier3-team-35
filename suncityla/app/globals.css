@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 :root {
-  --background: #ffffff;
+  --white: #ffffff;
   --btn-background: #7F95D1;
   --card-background: #F4F4F4;
   --primary-color: #040403;
@@ -13,7 +13,7 @@
 }
 
 body{
-  background-color: var(--background);
+  background-color: var(--white);
   font-family: "Poppins", sans-serif;
 }
 
@@ -65,4 +65,17 @@ body{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+footer{
+  background-color: var(--btn-background);
+  color: var(--white);
+  padding:20px 80px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer{
+  margin-top: 20px;
+  display: flex;
 }
