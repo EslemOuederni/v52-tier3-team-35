@@ -1,5 +1,5 @@
 {
-  "name": "solar-friend",
+  "name": "suncityla",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,10 @@
     "lint": "next lint",
     "test": "vitest",
     "prisma:generate": "prisma generate",
-    "prisma:migrate": "dotenv -e .env.local --  prisma migrate dev",
+    "prisma:migrate": "prisma migrate dev",
     "prisma:update": "npm run prisma:generate && npm run prisma:migrate",
-    "prisma:studio": "dotenv -e .env.local -- prisma studio",
-    "prisma:seed": "dotenv -e .env.local -- prisma db seed"
+    "prisma:studio": "prisma studio",
+    "prisma:seed": "prisma db seed"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
@@ -23,7 +23,7 @@
     "prisma": "^5.22.0",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
-    "solar-friend": "file:"
+    "suncityla": "file:"
   },
   "devDependencies": {
     "@types/node": "^20",

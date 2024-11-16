@@ -1,7 +1,7 @@
-import prisma from "@/prisma/prismaClient";
+import getBookings from "./action";
 
-export default async function AdminsPage() {
-  const bookings = await prisma.booking.findMany();
+export default async function BookingsPage() {
+  const bookings = await getBookings();
 
   return (
     <div>
