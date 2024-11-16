@@ -12,7 +12,8 @@
     "prisma:migrate": "prisma migrate dev",
     "prisma:update": "npm run prisma:generate && npm run prisma:migrate",
     "prisma:studio": "prisma studio",
-    "prisma:seed": "prisma db seed"
+    "prisma:seed": "prisma db seed",
+    "build:vercel": "npm run build && npm run prisma:generate"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
@@ -22,7 +23,8 @@
     "next": "15.0.3",
     "prisma": "^5.22.0",
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "solar-friend": "file:"
   },
   "devDependencies": {
     "@types/node": "^20",
