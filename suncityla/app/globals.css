@@ -1,21 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white: #ffffff;
+  --btn-background: #7F95D1;
+  --card-background: #F4F4F4;
+  --primary-color: #040403;
+  --secondary-color:#CBE896;
+  --heading-color: #16302B;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body{
+  background-color: var(--white);
+  font-family: "Poppins", sans-serif;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.hero-bg {
+  position: relative;
+  background-image: url("/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* 45% black overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h2{
+  color: #FFF648
+}
+
+.hero-content .bookingBtn{
+  background-color: var(--btn-background);
+}
+
+.heading{
+  color:var(--heading-color)
+}
+
+.card{
+  background-color: var(--card-background);
+  color: var(--primary-color);
+  width: 283px;
+  height: 380px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer{
+  background-color: var(--btn-background);
+  color: var(--white);
+  padding:20px 80px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer{
+  margin-top: 20px;
+  display: flex;
 }
