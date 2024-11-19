@@ -1,6 +1,6 @@
-import prisma from "@/prisma/prismaClient";
+"use server";
 
-export const dynamic = "force-dynamic";
+import prisma from "@/prisma/prismaClient";
 
 const getBookings = async () => {
   const bookings = await prisma.booking.findMany();
