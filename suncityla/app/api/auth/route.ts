@@ -30,7 +30,7 @@ export async function POST(req: Request){
         return NextResponse.json({admin: adminWithoutPassword,message: "Admin created successfully"},{status:201});
 
     } catch (error) {
-        return NextResponse.json({admin:null,message: "An error occured"},{status:500});
+        return NextResponse.json({admin:null,message: error},{status:500});
     }
 }
 
