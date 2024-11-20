@@ -24,10 +24,13 @@ export async function POST(req: Request){
                 password : hashedPassword
             }
         });
-
-        return NextResponse.json({admin,message: "Admin created successfully"},{status:201});
+        
+        // return the admin without the password
+        const {password: adminPassword,...adminWithoutPassword} = admin;
+        return NextResponse.json({admin: adminWithoutPassword,message: "Admin created successfully"},{status:201});
 
     } catch (error) {
         return NextResponse.json({admin:null,message: "An error occured"},{status:500});
     }
 }
+
