@@ -11,9 +11,13 @@ import { Input } from "@/components/ui/input";
 const BookingFormField = ({
   placeholder,
   name,
+  type,
+  disabled,
 }: {
   placeholder: string;
   name: string;
+  type?: string;
+  disabled?: boolean;
 }) => {
   return (
     <FormField
@@ -22,7 +26,13 @@ const BookingFormField = ({
         <FormItem>
           <FormLabel />
           <FormControl>
-            <Input placeholder={placeholder} {...field} />
+            <Input
+              type={type || "text"}
+              className="bg-white"
+              placeholder={placeholder}
+              readOnly={disabled}
+              {...field}
+            />
           </FormControl>
           <FormDescription />
           <FormMessage />

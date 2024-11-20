@@ -1,11 +1,13 @@
 "use server";
 
+import prisma from "@/prisma/prismaClient";
 import { bookingFormSchema } from "../new/schema";
 
 export type FormState = {
   message: string;
   fields?: Record<string, string>;
   errors?: string[];
+  bookingRef?: string;
 };
 
 const onSubmitAction = async (
@@ -14,6 +16,7 @@ const onSubmitAction = async (
 ): Promise<FormState> => {
   const formData = Object.fromEntries(data);
   const parsed = bookingFormSchema.safeParse(formData);
+  console.log({ parsed });
 
   if (!parsed.success) {
     const fields: Record<string, string> = {};
@@ -28,7 +31,19 @@ const onSubmitAction = async (
     };
   }
 
+  const booking = await prisma.booking.create({
+    data: {
+      firstname: parsed.data.fname,
+      lastname: parsed.data.lname,
+      streetAddress: parsed.data["street-address"],
+      state: parsed.data.state,
+      postalCode: parsed.data["postal-code"],
+      bookingDate: parsed.data.bookingDate,
+    },
+  });
+
   return {
+    bookingRef: booking.id,
     message: "Booking created",
   };
 };

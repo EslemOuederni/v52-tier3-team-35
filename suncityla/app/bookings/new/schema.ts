@@ -13,4 +13,22 @@ export const bookingFormSchema = z.object({
   "postal-code": z.string().min(5, {
     message: "Postal code is required.",
   }),
+  state: z
+    .string()
+    .min(2, {
+      message: "State is required",
+    })
+    .refine((val) => val === "LA", {
+      message: "State must be LA.",
+    }),
+  bookingDate: z.string().refine(
+    (val) => {
+      const date = new Date(val);
+      const now = new Date();
+      return date > now;
+    },
+    {
+      message: "Booking date must be in the future.",
+    }
+  ),
 });
