@@ -16,7 +16,6 @@ const onSubmitAction = async (
 ): Promise<FormState> => {
   const formData = Object.fromEntries(data);
   const parsed = bookingFormSchema.safeParse(formData);
-  console.log({ parsed });
 
   if (!parsed.success) {
     const fields: Record<string, string> = {};

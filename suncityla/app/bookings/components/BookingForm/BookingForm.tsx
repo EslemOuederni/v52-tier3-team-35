@@ -10,15 +10,17 @@ import { useActionState, useRef, startTransition } from "react";
 import onSubmitAction from "../../actions/onSubmitAction";
 import BookingFormField from "./BookingFormField";
 import { DateTimePickerForm } from "../TimeDatePicker/TimeDatePicker";
+import { useRouter } from "next/navigation";
 
 export type BookingFormData = z.infer<typeof bookingFormSchema>;
 
 export default function BookingForm() {
   const [state, formAction] = useActionState(onSubmitAction, {
     message: "",
+    bookingRef: undefined,
   });
 
-  console.log(state);
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof bookingFormSchema>>({
     resolver: zodResolver(bookingFormSchema),
@@ -39,7 +41,9 @@ export default function BookingForm() {
     form.reset();
   };
 
-  console.log(form.getValues());
+  if (state.bookingRef) {
+    router.push(`/bookings/${state.bookingRef}`);
+  }
 
   return (
     <div className="w-96 border p-4 bg-slate-100 rounded-md">
