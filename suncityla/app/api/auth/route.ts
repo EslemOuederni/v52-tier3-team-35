@@ -26,6 +26,7 @@ export async function POST(req: Request){
         });
         
         // return the admin without the password
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const {password: adminPassword,...adminWithoutPassword} = admin;
         return NextResponse.json({admin: adminWithoutPassword,message: "Admin created successfully"},{status:201});
 
