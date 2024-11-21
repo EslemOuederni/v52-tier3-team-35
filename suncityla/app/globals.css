@@ -120,6 +120,32 @@ footer {
   margin-top: 20px;
   display: flex;
 }
+/* Registration page */
+
+.regForm{
+  background-color: var(--btn-background);
+  padding: 20px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  height: 25rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
