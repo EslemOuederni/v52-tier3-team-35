@@ -6,7 +6,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Session } from "next-auth";
 import { signOut } from "next-auth/react";
 
-export default function NavbarToggle({ session }: { session: Session }) {
+export default function NavbarToggle({ session }: { session: Session | null }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
