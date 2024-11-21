@@ -1,3 +1,5 @@
+import getBookingById from  "./bookingById";
+
 export default async function BookingConfirmed({
   params,
 }: {
@@ -5,6 +7,20 @@ export default async function BookingConfirmed({
 }) {
   const { bookingId } = await params;
   console.log(bookingId);
+  
+
+  const booking = await getBookingById(bookingId);
+
+  if (!booking) {
+    return (
+      <div>
+        <h1>Booking Not Found</h1>
+        <p>No booking was found with the provided ID.</p>
+      </div>
+    );
+  }
+
+
 
   return (
     <div>
