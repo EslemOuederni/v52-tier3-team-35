@@ -15,7 +15,6 @@ export default function NavbarToggle({ session }: { session: Session | null }) {
         <Link href="/" className="text-2xl font-semibold md:text-4xl">SunCityLA</Link>
       </div>
 
-      {/* Hamburger Icon (Small Screens) */}
       <div className="md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -45,18 +44,29 @@ export default function NavbarToggle({ session }: { session: Session | null }) {
         } absolute top-16 left-0 w-full bg-white shadow-md md:shadow-none md:bg-transparent md:block md:static`}
       >
         <div className="flex flex-col items-start gap-4 p-4 md:flex-row md:justify-end md:items-center md:gap-6 font-semibold">
-          <Link href="/" className="hover:text-[#7F95D1]">Home</Link>
-          <Link href="/about" className="hover:text-[#7F95D1]">About</Link>
-          <Link href="/bookings" className="hover:text-[#7F95D1]">Booking</Link>
-          {session?.user ? (
-            <Button onClick={()=> signOut({
-                redirect:true,
-                callbackUrl: `${window.location.origin}/admins/signin`,
-            })} variant="destructive"> Sign Out </Button>
-          ) : (
-            <Link href="/admins/signin" className={buttonVariants()}>Admin Login</Link>
+          {/* if admin is logged in or not */}
+          {/* if admin is logged in, show sign out button and dashboard link */}
+          {session?.user ?
+          (
+            <>
+              <Link href="/admins" className="hover:text-[#7F95D1]">Dashboard</Link>
+              <Button
+                onClick={() =>
+                  signOut({
+                    redirect: true,
+                    callbackUrl: `${window.location.origin}/admins/signin`,
+                  })
+                } variant={"destructive"}> Sign Out </Button>
+            </>
+          ) :
+          (
+            <>
+              <Link href="/" className="hover:text-[#7F95D1]">Home</Link>
+              <Link href="/about" className="hover:text-[#7F95D1]">About</Link>
+              <Link href="/bookings" className="hover:text-[#7F95D1]">Booking</Link>
+              <Link href="/admins/signin" className={buttonVariants()}>Admin Login</Link>
+            </>
           )}
-          {/* Add more links as needed */}
         </div>
       </div>
     </nav>
