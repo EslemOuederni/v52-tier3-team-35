@@ -14,7 +14,7 @@ export default function NavbarToggle({ session }: { session: Session | null }) {
       <div>
         <Link href="/" className="text-2xl font-semibold md:text-4xl">SunCityLA</Link>
       </div>
-
+      
       <div className="md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -37,14 +37,12 @@ export default function NavbarToggle({ session }: { session: Session | null }) {
         </button>
       </div>
 
-      {/* Links Section */}
       <div
         className={`${
           isOpen ? "block" : "hidden"
         } absolute top-16 left-0 w-full bg-white shadow-md md:shadow-none md:bg-transparent md:block md:static`}
       >
         <div className="flex flex-col items-start gap-4 p-4 md:flex-row md:justify-end md:items-center md:gap-6 font-semibold">
-          {/* if admin is logged in or not */}
           {/* if admin is logged in, show sign out button and dashboard link */}
           {session?.user ?
           (
