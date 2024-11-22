@@ -15,10 +15,18 @@ model Admin {
 }
 
 model Booking {
-    id               String   @id @unique @default(uuid())
-    customerName     DateTime
-    customerAddress  String
-    customerTown     String
-    cusomterPostcode String
-    bookingDate      DateTime
+    id            String        @id @unique @default(uuid())
+    firstname     String
+    lastname      String
+    streetAddress String
+    postalCode    String
+    state         String
+    bookingDate   DateTime
+    status        BookingStatus @default(PENDING)
+}
+
+enum BookingStatus {
+    PENDING
+    CONFIRMED
+    CANCELLED
 }
