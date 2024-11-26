@@ -6,9 +6,9 @@ export const dynamic = "force-dynamic";
 
 export default async function AdminsPage() {
   const session = await getServerSession(authOptions);
-  if(!session || !session.user){
-        redirect("/admins/signin");
-    }
+  if (!session || !session.user) {
+    redirect("/admin/signin");
+  }
   return (
     <div>
       <h1>Admins Dashboard</h1>

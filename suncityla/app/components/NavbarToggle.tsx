@@ -12,9 +12,11 @@ export default function NavbarToggle({ session }: { session: Session | null }) {
   return (
     <nav className="flex flex-row justify-between items-center mx-4 py-4 md:mx-9 md:py-9">
       <div>
-        <Link href="/" className="text-2xl font-semibold md:text-4xl">SunCityLA</Link>
+        <Link href="/" className="text-2xl font-semibold md:text-4xl">
+          SunCityLA
+        </Link>
       </div>
-      
+
       <div className="md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -44,25 +46,38 @@ export default function NavbarToggle({ session }: { session: Session | null }) {
       >
         <div className="flex flex-col items-start gap-4 p-4 md:flex-row md:justify-end md:items-center md:gap-6 font-semibold">
           {/* if admin is logged in, show sign out button and dashboard link */}
-          {session?.user ?
-          (
+          {session?.user ? (
             <>
-              <Link href="/admins" className="hover:text-[#7F95D1]">Dashboard</Link>
+              <Link href="/admin" className="hover:text-[#7F95D1]">
+                Dashboard
+              </Link>
               <Button
                 onClick={() =>
                   signOut({
                     redirect: true,
-                    callbackUrl: `${window.location.origin}/admins/signin`,
+                    callbackUrl: `${window.location.origin}/admin/signin`,
                   })
-                } variant={"destructive"}> Sign Out </Button>
+                }
+                variant={"destructive"}
+              >
+                {" "}
+                Sign Out{" "}
+              </Button>
             </>
-          ) :
-          (
+          ) : (
             <>
-              <Link href="/" className="hover:text-[#7F95D1]">Home</Link>
-              <Link href="/about" className="hover:text-[#7F95D1]">About</Link>
-              <Link href="/bookings" className="hover:text-[#7F95D1]">Booking</Link>
-              <Link href="/admins/signin" className={buttonVariants()}>Admin Login</Link>
+              <Link href="/" className="hover:text-[#7F95D1]">
+                Home
+              </Link>
+              <Link href="/about" className="hover:text-[#7F95D1]">
+                About
+              </Link>
+              <Link href="/bookings" className="hover:text-[#7F95D1]">
+                Booking
+              </Link>
+              <Link href="/admin/signin" className={buttonVariants()}>
+                Admin Login
+              </Link>
             </>
           )}
         </div>
