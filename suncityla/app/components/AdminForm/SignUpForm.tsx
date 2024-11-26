@@ -50,7 +50,7 @@ export default function SignUpForm() {
     if (response.ok) {
       router.push('/admin/signin');
     } else {
-      console.error('An error occurred while registering');
+      alert('An error occurred while registering');
     }
   };
 
@@ -62,7 +62,7 @@ export default function SignUpForm() {
           {...register('username')}
           id="username"
           placeholder="Enter your username"
-          className="mt-1"
+          className="mt-1 bg-white"
         />
         {errors.username && <p className="text-red-500">{errors.username.message}</p>}
       </div>
@@ -73,9 +73,9 @@ export default function SignUpForm() {
           id="password"
           type="password"
           placeholder="Enter your password"
-          className="mt-1"
+          className="mt-1 bg-white"
         />
-        {errors.password && <p className="text-red-500">{errors.password.message}</p>}
+        {errors.password && <p className="text-red-600">{errors.password.message}</p>}
       </div>
       <div>
         <label htmlFor="confirmPassword">Confirm Password</label>
@@ -84,9 +84,9 @@ export default function SignUpForm() {
           id="confirmPassword"
           type="password"
           placeholder="Confirm your password"
-          className="mt-1"
+          className="mt-1 bg-white"
         />
-        {errors.confirmPassword && <p className="text-red-500">{errors.confirmPassword.message}</p>}
+        {errors.confirmPassword && <p className="text-red-600">{errors.confirmPassword.message}</p>}
       </div>
       <Button type="submit" variant="default">
         Register
