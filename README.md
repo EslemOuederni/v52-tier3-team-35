@@ -1,48 +1,30 @@
-# voyage-tasks
+## SunCityLA Solar Panel Project
 
-Your project's `readme` is as important to success as your code. For
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+Solar Panels are aiming to provide sustainable, renewable energy by installing solar PV systems in a designated area, whether it is residential, commercial, or industrial. The system will capture sunlight through photovoltaic cells, convert it into electrical energy, and either supply power to the building or feed it into the electrical grid.
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point -
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+SunCityLA project is a full-stack (....) application, designed for residents to schedule appointments and allowing City Hall employees to manage and plan visits effectively and in a timely manner. The  Residents can submit requests using preferred times and validated addresses,also allowing to receive notifications regarding their appointments. 
+The app includes an admin interface for authorized City Hall Employees to view as well as resident interface, to plan and export visit schedules.
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+## Our Mission 
+SunCityLA project is centered around promoting sustainable energy solutions by harnessing the power of the sun to reduce environmental impact, provide affordable electricity, and contribute to global energy independence. Also Support Economic Growth, Foster Technological Innovation, Encourage Environmental Responsibility, Promote Energy Security, and Inspire Future Generations! 
 
-> Own it & Make it your Own!
+# Project Features:
+This Full-Stack ..... app .............
 
-## Team Documents
 
-You may find these helpful as you work together to organize your project.
-
-- [Team Project Ideas](./docs/team_project_ideas.md)
-- [Team Decision Log](./docs/team_decision_log.md)
-
-> Meeting Agenda templates (located in the `/docs` directory in this repo):
-
-| Meeting Agenda Templates                             | Link                                                                 |
-| ---------------------------------------------------- | -------------------------------------------------------------------- |
-| Meeting - Voyage Kickoff                             | [link](./docs/meeting-voyage_kickoff.docx)                           |
-| Meeting - App Vision & Feature Planning              | [link](./docs/meeting-vision_and_feature_planning.docx)              |
-| Meeting - Sprint Retrospective, Review, and Planning | [link](./docs/meeting-sprint_retrospective_review_and_planning.docx) |
-| Meeting - Sprint Open Topic Session                  | [link](./docs/meeting-sprint_open_topic_session.docx)                |
+## Team Documents: 
+# Link for the App: 
+# Product Backlog: https://github.com/orgs/chingu-voyages/projects/277/views/1
+            |
 
 ## Our Team
 
-Everyone on your team should add their name along with a link to their GitHub
-& optionally their LinkedIn profiles below. Do this in Sprint #1 to validate
-your repo access and to practice PR'ing with your team _before_ you start
-coding!
-
 - Isslem Ouederni #1: [GitHub](https://github.com/EslemOuederni) / [LinkedIn](https://www.linkedin.com/in/isslem-ouederni-858a13182/)
 - Mariana Farcas #2: [GitHub](https://github.com/MarianaFarcas) / [LinkedIn](https://linkedin.com/in/mariana-f-6592661b5) ...
-- Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
-- Abdulsamad Yusuf : [GitHub](https://github.com/samad13) / [LinkedIn](www.linkedin.com/in/abdulsamad-yusuf-ba0064178)
+- Abdulsamad Yusuf #3 : [GitHub](https://github.com/samad13) / [LinkedIn](www.linkedin.com/in/abdulsamad-yusuf-ba0064178)
 - Anna Veselova #4: [GitHub](https://github.com/AnyaVeselova) / [LinkedIn](https://www.linkedin.com/in/anna-veselova-3640752a0/)
 - Albert Ngodi #5: [GitHub](https://github.com/ngodi) / [LinkedIn](https://linkedin.com/in/albertngodi)
-- Fouad Tabbara #3: - [GitHub](https://github.com/fmtabbara) 🥷
+- Fouad Tabbara #6: - [GitHub](https://github.com/fmtabbara) 🥷
 
 ## Installation guide
 
