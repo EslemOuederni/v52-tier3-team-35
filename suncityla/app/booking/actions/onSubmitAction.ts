@@ -1,7 +1,7 @@
-"use server";
+'use server';
 
-import prisma from "@/prisma/prismaClient";
-import { bookingFormSchema } from "../new/schema";
+import prisma from '@/prisma/prismaClient';
+import { bookingFormSchema } from '../schemas/newBookingForm';
 
 export type FormState = {
   message: string;
@@ -10,10 +10,7 @@ export type FormState = {
   bookingRef?: string;
 };
 
-const onSubmitAction = async (
-  prvState: FormState,
-  data: FormData
-): Promise<FormState> => {
+const onSubmitAction = async (prvState: FormState, data: FormData): Promise<FormState> => {
   const formData = Object.fromEntries(data);
   const parsed = bookingFormSchema.safeParse(formData);
 
@@ -24,7 +21,7 @@ const onSubmitAction = async (
     }
 
     return {
-      message: "Invalid form data",
+      message: 'Invalid form data',
       fields,
       errors: parsed.error.issues.map((issue) => issue.message),
     };
@@ -34,16 +31,16 @@ const onSubmitAction = async (
     data: {
       firstname: parsed.data.fname,
       lastname: parsed.data.lname,
-      streetAddress: parsed.data["street-address"],
+      streetAddress: parsed.data['street-address'],
       state: parsed.data.state,
-      postalCode: parsed.data["postal-code"],
+      postalCode: parsed.data['postal-code'],
       bookingDate: parsed.data.bookingDate,
     },
   });
 
   return {
     bookingRef: booking.id,
-    message: "Booking created",
+    message: 'Booking created',
   };
 };
 
