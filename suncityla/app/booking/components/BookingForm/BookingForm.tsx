@@ -43,13 +43,13 @@ export default function BookingForm() {
 
   useEffect(() => {
     if (state.bookingRef && !isPending) {
-      router.push(`/bookings/${state.bookingRef}`);
+      router.push(`/booking/${state.bookingRef}`);
     }
   }, [state.bookingRef, isPending, router]);
 
   return (
     <div className="w-96 border p-4 bg-slate-100 rounded-md">
-      {isPending && <LoadingModal />}
+      <LoadingModal show={isPending} />
       <Form {...form}>
         <form
           className="space-y-4"

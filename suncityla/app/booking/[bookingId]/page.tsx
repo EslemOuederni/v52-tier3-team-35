@@ -1,4 +1,3 @@
-import BookingCard from '@/app/components/BookingCard/BookingCard';
 import prisma from '@/prisma/prismaClient';
 import BackButton from '../components/BackButton/BackButton';
 import BookingEntry from '@/app/components/BookingCard/BookingEntry';
