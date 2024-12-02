@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -10,19 +10,22 @@ export default function Hero() {
           Join Los Angeles <br />
           Move to Solar Power!
         </h1>
-        <h2 className=" text-3xl font-bold mt-[33px] text-yellow-300">
-          We’re helping LA set up solar energy.{" "}
+        <h2 className=" text-3xl font-bold mt-[33px] text-primary">
+          We’re helping LA set up solar energy.{' '}
         </h2>
         <p className=" text-xl text-white font-medium mt-[33px] w-1/2">
-          This project provides a free service where a city-hired specialist
-          evaluates the installation and maintenance costs of solar panels.
+          This project provides a free service where a city-hired specialist evaluates the
+          installation and maintenance costs of solar panels.
         </p>
-        <div className="flex justify-center pt-10 ">
-          <Button
-            size="lg"
-            className="font-bold text-white bg-blue-800 hover:bg-blue-900"
-          >
-            <Link href="/bookings">Book Now</Link>
+        <div className="flex flex-col justify-center items-center pt-10">
+          <Link href="/booking/new">
+            <Button size="lg" className="font-bold">
+              Book Now
+            </Button>
+          </Link>
+          <p className="text-white">or</p>
+          <Button size="lg" variant="outline" className="font-bold">
+            <Link href="/booking">View booking</Link>
           </Button>
         </div>
       </div>
