@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Form } from '@/components/ui/form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import BookingFormField from './BookingFormField';
-import LoadingModal from '@/app/components/modals/Loading';
+import LoadingModal from '@/components/modals/Loading';
 import onFindBookingAction from '../../actions/onFindBooking';
 import findBookingFormSchema from '../../schemas/findBookingForm';
 
