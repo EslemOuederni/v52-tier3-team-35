@@ -5,21 +5,22 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
+} from '@/components/ui/dialog';
 
 const LoadingModal = ({
+  show,
   title,
   description,
 }: {
+  show: boolean;
   title?: string;
   description?: string;
 }) => {
   return (
-    <Dialog open>
-      <DialogTrigger>Open</DialogTrigger>
+    <Dialog open={show}>
       <DialogContent hideCloseButton>
         <DialogHeader>
-          <DialogTitle>{title || "Loading, please wait a moment"}</DialogTitle>
+          <DialogTitle>{title || 'Loading, please wait a moment'}</DialogTitle>
           <DialogDescription>{description}</DialogDescription>
         </DialogHeader>
       </DialogContent>

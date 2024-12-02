@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -17,7 +17,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   GitHub
-                </a>{" "}
+                </a>{' '}
                 /
                 <a
                   href="https://linkedin.com/in/isslemouederni"
@@ -35,7 +35,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   GitHub
-                </a>{" "}
+                </a>{' '}
                 /
                 <a
                   href="https://linkedin.com/in/marianafarcas"
@@ -53,7 +53,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   GitHub
-                </a>{" "}
+                </a>{' '}
                 /
                 <a
                   href="https://linkedin.com/in/abdulsamadyusuf"
@@ -65,13 +65,9 @@ export default function Footer() {
               </p>
               <p>
                 Anna Veselova #4:
-                <a
-                  href="https://github.com/annaveselova"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/annaveselova" target="_blank" rel="noopener noreferrer">
                   GitHub
-                </a>{" "}
+                </a>{' '}
                 /
                 <a
                   href="https://linkedin.com/in/annaveselova"
@@ -83,13 +79,9 @@ export default function Footer() {
               </p>
               <p>
                 Albert Ngodi #5:
-                <a
-                  href="https://github.com/albertngodi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/albertngodi" target="_blank" rel="noopener noreferrer">
                   GitHub
-                </a>{" "}
+                </a>{' '}
                 /
                 <a
                   href="https://linkedin.com/in/albertngodi"
@@ -101,11 +93,7 @@ export default function Footer() {
               </p>
               <p>
                 Fouad Tabbara #3:
-                <a
-                  href="https://github.com/fouadtabbara"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/fouadtabbara" target="_blank" rel="noopener noreferrer">
                   GitHub
                 </a>
               </p>
@@ -126,10 +114,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/bookings/new"
-                className="text-blue-500 hover:underline"
-              >
+              <Link href="/booking/new" className="text-blue-500 hover:underline">
                 Book Now
               </Link>
             </li>
