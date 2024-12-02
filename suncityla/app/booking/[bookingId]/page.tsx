@@ -1,6 +1,7 @@
 import BookingCard from '@/app/components/BookingCard/BookingCard';
 import prisma from '@/prisma/prismaClient';
 import BackButton from '../components/BackButton/BackButton';
+import BookingEntry from '@/app/components/BookingCard/BookingEntry';
 
 export default async function BookingConfirmed({
   params,
@@ -21,18 +22,7 @@ export default async function BookingConfirmed({
 
   return (
     <div>
-      <h1>Your booking status.</h1>
-      <BookingCard
-        userData={{
-          firstname: booking.firstname,
-          lastname: booking.lastname,
-          streetAddress: booking.streetAddress,
-          postalCode: booking.postalCode,
-          state: booking.state,
-        }}
-        bookingDate={booking.bookingDate}
-        status={booking.status}
-      />
+      <BookingEntry booking={booking} />
       <BackButton />
     </div>
   );
