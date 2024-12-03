@@ -39,7 +39,7 @@ The app was built using the following:
 **Chingu Product Backlog:** [Click here](https://github.com/orgs/chingu-voyages/projects/277/views/1)
 
 **Product Backlog:** [Click here](https://docs.google.com/document/d/1KYfGvCHYQ9AB2acP4Q80EEOivD5hVsxkwRixL91ZFto/edit?tab=t.0)
-            |
+           
 
 ## Our Amazing Team:
 
