@@ -8,16 +8,40 @@ The app includes an admin interface for authorized City Hall Employees to view a
 ## Our Mission 
 SunCityLA project is centered around promoting sustainable energy solutions by harnessing the power of the sun to reduce environmental impact, provide affordable electricity, and contribute to global energy independence. Also Support Economic Growth, Foster Technological Innovation, Encourage Environmental Responsibility, Promote Energy Security, and Inspire Future Generations! 
 
-# Project Features:
+## Project Stack Set Up:
 This Full-Stack ..... app .............
+The app was built using the following:
+
+**Framework:** Next.js(with TypeScript),Tailwind CSS, React Hook Form
+
+**UI library:**
+
+**API Documentation:** ?
+
+**Google Authentication:**?
+
+**Database:** Postgres
+
+**Testing:** E2E with Cypress
+ 
+**Deployment Cloud:** Front-end-Vercel; Back-end-Render
+
+**Wireframe:** Figma Design
+
+**Project Management Tool:** GitHub Projects, Google Drive
+
+**Team Communication Tools:** Discord Channels, Google Meet
 
 
-## Team Documents: 
-# Link for the App: 
-# Product Backlog: https://github.com/orgs/chingu-voyages/projects/277/views/1
+**Team Project Documentation:**
+
+**Link for the App:**
+**Chingu Product Backlog:** [Click here](https://github.com/orgs/chingu-voyages/projects/277/views/1)
+
+**Product Backlog:** [Click here](https://docs.google.com/document/d/1KYfGvCHYQ9AB2acP4Q80EEOivD5hVsxkwRixL91ZFto/edit?tab=t.0)
             |
 
-## Our Team
+## Our Amazing Team:
 
 - Isslem Ouederni #1: [GitHub](https://github.com/EslemOuederni) / [LinkedIn](https://www.linkedin.com/in/isslem-ouederni-858a13182/)
 - Mariana Farcas #2: [GitHub](https://github.com/MarianaFarcas) / [LinkedIn](https://linkedin.com/in/mariana-f-6592661b5) ...
@@ -26,9 +50,4 @@ This Full-Stack ..... app .............
 - Albert Ngodi #5: [GitHub](https://github.com/ngodi) / [LinkedIn](https://linkedin.com/in/albertngodi)
 - Fouad Tabbara #6: - [GitHub](https://github.com/fmtabbara) 🥷
 
-## Installation guide
-
-To install and run the next commands:
-`cd solar-friend`
-`npm i`
-`npm run dev`
+**Special thanks goes to Chingu platform for making this project happened!**
