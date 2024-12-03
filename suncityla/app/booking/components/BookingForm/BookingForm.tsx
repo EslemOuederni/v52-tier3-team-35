@@ -1,24 +1,23 @@
-"use client";
+'use client';
 
-import { Button } from "@/components/ui/button";
-import { Form } from "@/components/ui/form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { bookingFormSchema } from "../../new/schema";
-import { useActionState, useRef, startTransition, useEffect } from "react";
-import onSubmitAction from "../../actions/onSubmitAction";
-import BookingFormField from "./BookingFormField";
-import { DateTimePickerForm } from "../TimeDatePicker/TimeDatePicker";
-import { useRouter } from "next/navigation";
-import LoadingModal from "@/components/modals/Loading";
+import { useActionState, useRef, startTransition, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { Button } from '@/components/ui/button';
+import { Form } from '@/components/ui/form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import BookingFormField from './BookingFormField';
+import { DateTimePickerForm } from '../TimeDatePicker/TimeDatePicker';
+import LoadingModal from '@/components/modals/Loading';
+import onSubmitAction from '@/app/booking/actions/onSubmitAction';
+import { bookingFormSchema } from '../../schemas/newBookingForm';
 
 export type BookingFormData = z.infer<typeof bookingFormSchema>;
 
-export default function BookingForm () {
+export default function BookingForm() {
   const [state, formAction, isPending] = useActionState(onSubmitAction, {
-    message: "",
-    bookingRef: undefined,
+    message: '',
   });
 
   const router = useRouter();
@@ -26,12 +25,12 @@ export default function BookingForm () {
   const form = useForm<z.infer<typeof bookingFormSchema>>({
     resolver: zodResolver(bookingFormSchema),
     defaultValues: {
-      fname: "",
-      lname: "",
-      "street-address": "",
-      "postal-code": "",
-      state: "LA",
-      bookingDate: "",
+      fname: '',
+      lname: '',
+      'street-address': '',
+      'postal-code': '',
+      state: 'LA',
+      bookingDate: new Date().toISOString(),
       ...(state.fields ?? {}),
     },
   });
@@ -43,15 +42,14 @@ export default function BookingForm () {
   };
 
   useEffect(() => {
-    if (state.bookingRef && !isPending)
-    {
-      router.push(`/bookings/${state.bookingRef}`);
+    if (state.bookingRef && !isPending) {
+      router.push(`/booking/${state.bookingRef}`);
     }
   }, [state.bookingRef, isPending, router]);
 
   return (
     <div className="w-96 border p-4 bg-slate-100 rounded-md">
-      {isPending && <LoadingModal />}
+      <LoadingModal show={isPending} />
       <Form {...form}>
         <form
           className="space-y-4"
@@ -62,9 +60,8 @@ export default function BookingForm () {
             evt.preventDefault();
             form.handleSubmit(() => {
               startTransition(() => {
-                if (!formRef.current)
-                {
-                  throw Error("Form element not found");
+                if (!formRef.current) {
+                  throw Error('Form element not found');
                 }
                 formAction(new FormData(formRef.current));
               });
