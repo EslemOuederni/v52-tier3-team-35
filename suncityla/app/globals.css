@@ -101,7 +101,7 @@ body {
 footer {
   background-color: var(--btn-background);
   color: var(--white);
-  padding: 20px 80px;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,18 +110,4 @@ footer {
 footer {
   margin-top: 20px;
   display: flex;
-}
-/* Registration page */
-
-.regForm {
-  background-color: var(--btn-background);
-  padding: 20px 40px 40px 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 40%;
-  height: auto;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }

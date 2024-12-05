@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description: 'We\’re helping LA set up solar energy.',
 };
 
-export default async function RootLayout({
+export default async function RootLayout ({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -31,7 +31,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="container mx-auto ">
+        <div className="sm:w-full sm:mx-0 lg:container lg:mx-auto">
           <SessionProvider session={session}>
             <Navbar />
             {children}
