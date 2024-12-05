@@ -1,3 +1,5 @@
+import { format } from 'date-fns';
+import { Booking } from '@prisma/client';
 import {
   Table,
   TableBody,
@@ -7,8 +9,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import { Booking } from '@prisma/client';
-import { format } from 'date-fns';
+import BookingActions from '../BookingActions/BookingActions';
 
 const BookingEntry = ({ booking }: { booking: Booking }) => {
   return (
@@ -29,6 +30,7 @@ const BookingEntry = ({ booking }: { booking: Booking }) => {
             <TableHead>Address line 2</TableHead>
             <TableHead>State</TableHead>
             <TableHead>Booking status</TableHead>
+            <TableHead></TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -39,7 +41,16 @@ const BookingEntry = ({ booking }: { booking: Booking }) => {
             <TableCell>{booking.streetAddress}</TableCell>
             <TableCell>{booking.postalCode}</TableCell>
             <TableCell>{booking.state}</TableCell>
-            <TableCell>{booking.status}</TableCell>
+            <TableCell
+              className={`font-bold ${booking.status === 'CANCELLED' ? 'text-destructive' : 'black'}`}
+            >
+              {booking.status}
+            </TableCell>
+            {booking.status !== 'CANCELLED' && (
+              <TableCell>
+                <BookingActions bookingId={booking.id} bookingStatus={booking.status} />
+              </TableCell>
+            )}
           </TableRow>
         </TableBody>
       </Table>
