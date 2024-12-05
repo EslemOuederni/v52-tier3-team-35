@@ -1,6 +1,6 @@
 import prisma from '@/prisma/prismaClient';
 import BackButton from '../components/BackButton/BackButton';
-import BookingEntry from '@/app/components/BookingCard/BookingEntry';
+import BookingEntry from '../components/BookingCard/BookingEntry';
 
 export default async function BookingConfirmed({
   params,

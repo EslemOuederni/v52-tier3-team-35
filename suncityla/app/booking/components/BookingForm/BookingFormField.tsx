@@ -23,8 +23,6 @@ const BookingFormField = ({
     <FormField
       name={name}
       render={({ field }) => {
-        console.log('field', field);
-
         return (
           <FormItem>
             <FormLabel />
