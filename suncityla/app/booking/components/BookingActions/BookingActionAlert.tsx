@@ -33,7 +33,12 @@ export function BookingActionAlert({
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel onClick={onClose}>No</AlertDialogCancel>
-          <AlertDialogAction onClick={onContinue}>Yes</AlertDialogAction>
+          <AlertDialogAction
+            onClick={onContinue}
+            className="bg-destructive text-white font-bold hover:bg-destructive"
+          >
+            Yes
+          </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>

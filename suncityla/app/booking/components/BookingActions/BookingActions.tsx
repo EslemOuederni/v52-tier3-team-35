@@ -46,7 +46,7 @@ const BookingActions = ({
         <DropdownMenuSeparator />
         {bookingStatus === 'PENDING' && (
           <Link href={`${bookingId}/amend`}>
-            <DropdownMenuItem>Amend</DropdownMenuItem>
+            <DropdownMenuItem className="cursor-pointer">Amend</DropdownMenuItem>
           </Link>
         )}
 
@@ -55,7 +55,7 @@ const BookingActions = ({
           description="Are you sure you want to cancel this booking?"
           TriggerButton={
             <DropdownMenuItem
-              className="text-destructive font-bold"
+              className="text-destructive font-bold cursor-pointer hover:text-destructive"
               onClick={handleShowWarningModal}
             >
               Cancel

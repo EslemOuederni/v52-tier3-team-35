@@ -13,7 +13,7 @@ export type FormState = {
 const onSubmitAction = async (prvState: FormState, data: FormData): Promise<FormState> => {
   const formData = Object.fromEntries(data);
   const parsed = bookingFormSchema.safeParse(formData);
-
+  let booking;
   if (!parsed.success) {
     const fields: Record<string, string> = {};
     for (const key of Object.keys(formData)) {
@@ -27,20 +27,36 @@ const onSubmitAction = async (prvState: FormState, data: FormData): Promise<Form
     };
   }
 
-  const booking = await prisma.booking.create({
-    data: {
-      firstname: parsed.data.fname,
-      lastname: parsed.data.lname,
-      streetAddress: parsed.data['street-address'],
-      state: parsed.data.state,
-      postalCode: parsed.data['postal-code'],
-      bookingDate: parsed.data.bookingDate,
-    },
-  });
+  if (prvState.bookingRef) {
+    booking = await prisma.booking.update({
+      where: {
+        id: prvState.bookingRef,
+      },
+      data: {
+        firstname: parsed.data.fname,
+        lastname: parsed.data.lname,
+        streetAddress: parsed.data['street-address'],
+        state: parsed.data.state,
+        postalCode: parsed.data['postal-code'],
+        bookingDate: parsed.data.bookingDate,
+      },
+    });
+  } else {
+    booking = await prisma.booking.create({
+      data: {
+        firstname: parsed.data.fname,
+        lastname: parsed.data.lname,
+        streetAddress: parsed.data['street-address'],
+        state: parsed.data.state,
+        postalCode: parsed.data['postal-code'],
+        bookingDate: parsed.data.bookingDate,
+      },
+    });
+  }
 
   return {
     bookingRef: booking.id,
-    message: 'Booking created',
+    message: 'success',
   };
 };
 
