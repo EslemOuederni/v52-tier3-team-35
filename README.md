@@ -1,8 +1,14 @@
 ## SunCityLA Solar Panel Project
+## Table of Contents
 
+* [Overview](#overview)
+* [Our Mission](#Our-Mission)
+* [Requirements & Specifications](#requirements-specifications)
+
+## Overview
 Solar Panels are aiming to provide sustainable, renewable energy by installing solar PV systems in a designated area, whether it is residential, commercial, or industrial. The system will capture sunlight through photovoltaic cells, convert it into electrical energy, and either supply power to the building or feed it into the electrical grid.
 
-SunCityLA project is a full-stack (....) application, designed for residents to schedule appointments and allowing City Hall employees to manage and plan visits effectively and in a timely manner. The  Residents can submit requests using preferred times and validated addresses,also allowing to receive notifications regarding their appointments. 
+SunCityLA project is a full-stack (....) application, designed to support residents, in one hand, to schedule and manage their appointments and City Hall Employees, in another hand, to manage and plan visits effectively and in a timely manner. The  Residents can submit requests using preferred times and validated addresses,also allowing to receive notifications regarding their appointments. 
 The app includes an admin interface for authorized City Hall Employees to view as well as resident interface, to plan and export visit schedules.
 
 ## Our Mission 
