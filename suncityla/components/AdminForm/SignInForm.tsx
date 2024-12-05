@@ -81,7 +81,7 @@ export default function SignInForm () {
             <div className='mx-auto my-1 flex w-full items-center justify-evenly before:mr-4 before:block before:h-px before:flex-grow before:bg-stone-400 after:ml-4 after:block after:h-px after:flex-grow after:bg-stone-400'>
                 or
             </div>
-            <Button onClick={() => signIn("github", { callbackUrl: "/admin" })} variant="default">  <Github className="w-8 h-8 mr-2" />Sign In with GitHub</Button>
+            <Button onClick={() => signIn("github", { callbackUrl: "/admin" })} variant="default">  <Github className="w-8 h-8 mr-2" />Sign In with GitHub {isPending && "..."}</Button>
             {isPending && <Spinner />}
         </form>
     )

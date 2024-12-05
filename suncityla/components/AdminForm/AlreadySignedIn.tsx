@@ -14,8 +14,8 @@ const AlreadySignedIn: React.FC<AlreadySignedInProps> = ({ onRedirect }) => {
         // Redirect automatically after showing the alert
         const timer = setTimeout(() => {
             onRedirect();
-        }, 2000); // Delay for 2 seconds before redirecting
-        return () => clearTimeout(timer); // Cleanup the timeout on unmount
+        }, 2000);
+        return () => clearTimeout(timer);
     }, [onRedirect]);
 
     return (
