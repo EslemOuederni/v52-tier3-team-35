@@ -3,7 +3,9 @@
 
 * [Overview](#overview)
 * [Our Mission](#Our-Mission)
-* [Requirements & Specifications](#requirements-specifications)
+* [Project Stack Set Up](#Project-Stack-Set-Up)
+* [Team Project Documentation](#Team-Project-Documentation)
+* [ Our Amazing Team](#Our-Amazing-Team)
 
 ## Overview
 Solar Panels are aiming to provide sustainable, renewable energy by installing solar PV systems in a designated area, whether it is residential, commercial, or industrial. The system will capture sunlight through photovoltaic cells, convert it into electrical energy, and either supply power to the building or feed it into the electrical grid.
@@ -18,33 +20,34 @@ SunCityLA project is centered around promoting sustainable energy solutions by h
 This Full-Stack ..... app .............
 The app was built using the following:
 
-**Framework:** Next.js(with TypeScript),Tailwind CSS, React Hook Form
+**Framework-** Next.js(with TypeScript),Tailwind CSS, React Hook Form
 
-**UI library:**
+**UI library-**
 
-**API Documentation:** ?
+**API Documentation-** ?
 
-**Google Authentication:**?
+**Google Authentication-**?
 
-**Database:** Postgres
+**Database-** Postgres
 
-**Testing:** E2E with Cypress
+**Testing-** E2E with Cypress
  
-**Deployment Cloud:** Front-end-Vercel; Back-end-Render
+**Deployment Cloud-** Front-end-Vercel; Back-end-Render
 
-**Wireframe:** Figma Design
+**Wireframe-** Figma Design
 
-**Project Management Tool:** GitHub Projects, Google Drive
+**Project Management Tool-** GitHub Projects, Google Drive
 
-**Team Communication Tools:** Discord Channels, Google Meet
+**Team Communication Tools-** Discord Channels, Google Meet
 
 
-**Team Project Documentation:**
+## Team Project Documentation:
 
-**Link for the App:**
-**Chingu Product Backlog:** [Click here](https://github.com/orgs/chingu-voyages/projects/277/views/1)
+**Link for the App-** [Click here](https://[github.com/orgs/chingu-voyages/projects/277/views/1](https://v52-tier3-team-35-v8ru.vercel.app/))
 
-**Product Backlog:** [Click here](https://docs.google.com/document/d/1KYfGvCHYQ9AB2acP4Q80EEOivD5hVsxkwRixL91ZFto/edit?tab=t.0)
+**Chingu Product Backlog-** [Click here](https://github.com/orgs/chingu-voyages/projects/277/views/1)
+
+**Product Backlog-** [Click here](https://docs.google.com/document/d/1KYfGvCHYQ9AB2acP4Q80EEOivD5hVsxkwRixL91ZFto/edit?tab=t.0)
            
 
 ## Our Amazing Team:
@@ -56,4 +59,4 @@ The app was built using the following:
 - Albert Ngodi #5: [GitHub](https://github.com/ngodi) / [LinkedIn](https://linkedin.com/in/albertngodi)
 - Fouad Tabbara #6: - [GitHub](https://github.com/fmtabbara) 🥷
 
-**Special thanks goes to Chingu platform for making this project happened!**
+**Special Thanks goes to Chingu platform for making this project happened!**
