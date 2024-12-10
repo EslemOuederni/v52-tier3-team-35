@@ -17,12 +17,11 @@ The app includes an admin interface for authorized City Hall Employees to view a
 SunCityLA project is centered around promoting sustainable energy solutions by harnessing the power of the sun to reduce environmental impact, provide affordable electricity, and contribute to global energy independence. Also Support Economic Growth, Foster Technological Innovation, Encourage Environmental Responsibility, Promote Energy Security, and Inspire Future Generations! 
 
 ## Project Stack Set Up:
-This Full-Stack ..... app .............
-The app was built using the following:
+This Full-Stack app built with NextJS, using the following:
 
 **Framework-** Next.js(with TypeScript),Tailwind CSS, React Hook Form
 
-**UI library-**
+**UI library-** 
 
 **API Documentation-** ?
 
