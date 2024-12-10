@@ -21,17 +21,13 @@ This Full-Stack app built with NextJS, using the following:
 
 **Framework-** Next.js(with TypeScript),Tailwind CSS, React Hook Form
 
-**UI library-** 
+**UI library-** Shadcn
 
-**API Documentation-** ?
-
-**Google Authentication-**?
+**GitHub Authentication-** NextAuth.js
 
 **Database-** Postgres
-
-**Testing-** E2E with Cypress
  
-**Deployment Cloud-** Front-end-Vercel; Back-end-Render
+**Deployment Cloud-** Vercel
 
 **Wireframe-** Figma Design
 
