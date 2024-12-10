@@ -38,7 +38,7 @@ This Full-Stack app built with NextJS, using the following:
 
 ## Team Project Documentation:
 
-**Link for the App-** [Click here](https://[github.com/orgs/chingu-voyages/projects/277/views/1](https://v52-tier3-team-35-v8ru.vercel.app/))
+**Link for the App-** [Click here](https://v52-tier3-team-35-v8ru.vercel.app/)
 
 **Chingu Product Backlog-** [Click here](https://github.com/orgs/chingu-voyages/projects/277/views/1)
 
