@@ -7,6 +7,7 @@
 * [Project Stack Set Up](#Project-Stack-Set-Up)
 * [Team Project Documentation](#Team-Project-Documentation)
 * [Our Amazing Team](#Our-Amazing-Team)
+* [Installation](#installation)
 
 ## Overview
 Solar Panels are aiming to provide sustainable, renewable energy by installing solar PV systems in a designated area, whether it is residential, commercial, or industrial. The system will capture sunlight through photovoltaic cells, convert it into electrical energy, and either supply power to the building or feed it into the electrical grid.
@@ -71,4 +72,76 @@ This Full-Stack app with both frontend and backend components built with NextJS,
 - Albert Ngodi #5: [GitHub](https://github.com/ngodi) / [LinkedIn](https://linkedin.com/in/albertngodi)
 - Fouad Tabbara #6: - [GitHub](https://github.com/fmtabbara) 🥷
 
-**Special Thanks to Chingu platform for making this project happened!**
+# Installation
+
+Here's an updated and structured version of the README with a **Setup Instructions** section that incorporates the steps shared by the developer:
+
+---
+
+# Installation
+
+## Prerequisites
+
+Ensure you have the following installed:
+
+* [Node.js](https://nodejs.org/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [Prisma](https://www.prisma.io/) CLI (optional)
+
+## Getting Started
+
+Follow these steps to set up and run the application locally:
+
+1. **Clone the Repository**  
+   Clone the project repository to your local machine:
+
+   ```bash
+   git clone https://github.com/chingu-voyages/v52-tier3-team-35.git
+   cd suncityla
+
+2. **Create a .env File**  
+   Inside the project root directory, create a .env file and add the following configuration:  
+
+   ```env
+   DATABASE_URL=<databse_url>
+   NEXTAUTH_SECRET=<your-secret>
+   NEXTAUTH_URL=http://localhost:3000
+   GITHUB_ID=<your-github-id>
+   GITHUB_SECRET=<your-github-secret>
+   ```
+
+   Make sure to create a github oath keys. You can follow this [guide](https://authjs.dev/guides/configuring-github) for more details.
+
+3. **Install Dependencies**  
+   Install the required dependencies using your preferred package manager:
+
+   ```bash
+   npm install
+   # or
+   pnpm install
+   ```
+
+4. **Update Prisma**  
+   Run the Prisma commands to set up the database schema:
+
+   ```bash
+   npm run prisma:update
+   ```
+
+5. **Start the Development Server**  
+   Start the application locally:
+
+   ```bash
+   npm run dev
+   ```
+
+6. **Access the Application**  
+   Open your browser and navigate to:
+   [http://localhost:3000](http://localhost:3000)
+
+7. **Test Navigation**  
+   Verify the application by accessing the following links:
+   * /admins
+   * /bookings``
+  
+     **Special Thanks to Chingu platform for making this project happened!**
