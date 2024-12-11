@@ -71,4 +71,4 @@ This Full-Stack app with both frontend and backend components built with NextJS,
 - Albert Ngodi #5: [GitHub](https://github.com/ngodi) / [LinkedIn](https://linkedin.com/in/albertngodi)
 - Fouad Tabbara #6: - [GitHub](https://github.com/fmtabbara) 🥷
 
-**Special Thanks goes to Chingu platform for making this project happened!**
+**Special Thanks to Chingu platform for making this project happened!**
