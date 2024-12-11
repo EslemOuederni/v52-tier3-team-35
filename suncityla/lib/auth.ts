@@ -27,8 +27,7 @@ export const authOptions: NextAuthOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize (credentials) {
-        if (!credentials?.username || !credentials?.password)
-        {
+        if (!credentials?.username || !credentials?.password) {
           return null;
         }
 
@@ -38,20 +37,17 @@ export const authOptions: NextAuthOptions = {
           },
         });
 
-        if (!existingAdmin)
-        {
+        if (!existingAdmin) {
           return null;
         }
         console.log(credentials.password, existingAdmin.password);
 
-        if (existingAdmin.password)
-        {
+        if (existingAdmin.password) {
           const passwordMatch = await compare(
             credentials.password,
             existingAdmin.password
           );
-          if (!passwordMatch)
-          {
+          if (!passwordMatch) {
             return null;
           }
         }
@@ -62,4 +58,10 @@ export const authOptions: NextAuthOptions = {
       },
     }),
   ],
+  callbacks: {
+    async jwt ({ token, user }) {
+      if (user && user.username) token.username = user.username;
+      return token;
+    },
+  },
 };
