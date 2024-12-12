@@ -25,6 +25,8 @@ SunCityLA project is centered around promoting sustainable energy solutions by h
 ![Screen 4](https://github.com/user-attachments/assets/6cf2c200-7a5f-4080-b897-2e62b84ce98b)
 ![Screen 5](https://github.com/user-attachments/assets/d0e52dd8-14e8-4491-b50f-359aeec6c286)
 ![Screen 6](https://github.com/user-attachments/assets/e65420a4-b5be-428b-be19-9bd072c04291)
+![Screen 6](https://github.com/user-attachments/assets/1e0ac834-47cb-464e-95fb-36882de026d8)
+
 
 
 
