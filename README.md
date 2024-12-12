@@ -74,10 +74,6 @@ This Full-Stack app with both frontend and backend components built with NextJS,
 - Albert Ngodi #5: [GitHub](https://github.com/ngodi) / [LinkedIn](https://linkedin.com/in/albertngodi)
 - Fouad Tabbara #6: - [GitHub](https://github.com/fmtabbara) 🥷
 
-# Installation
-
-Here's an updated and structured version of the README with a **Setup Instructions** section that incorporates the steps shared by the developer:
-
 ---
 
 # Installation
