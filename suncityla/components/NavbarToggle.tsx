@@ -68,11 +68,11 @@ export default function NavbarToggle ({ session }: { session: Session | null }) 
               <Link href="/" className="hover:text-[#7F95D1]">
                 Home
               </Link>
-              <Link href="/about" className="hover:text-[#7F95D1]">
-                About
+              <Link href="/booking/new" className="hover:text-[#7F95D1]">
+                New Request
               </Link>
               <Link href="/booking" className="hover:text-[#7F95D1]">
-                Booking
+                Verify Booking
               </Link>
               <Link href="/admin/signin">
                 <Button className="font-bold">Admin Login</Button>

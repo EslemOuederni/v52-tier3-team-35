@@ -36,7 +36,7 @@ export const columns: ColumnDef<BookingTableProps>[] = [
                 </button>
             )
         },
-        cell: ({ getValue }) => <span>{new Date(getValue() as string).toDateString()}</span>,
+        cell: ({ getValue }) => <span>{new Date(getValue() as string).toDateString()} {new Date(getValue() as string).toLocaleTimeString()}</span>,
     },
     {
         accessorKey: "streetAddress",
