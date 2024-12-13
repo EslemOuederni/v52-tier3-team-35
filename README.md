@@ -77,6 +77,7 @@ This Full-Stack app with both frontend and backend components built with NextJS,
 ---
 
 # Installation
+Here's an updated and structured version of the README file with a **Setup Instructions** section that incorporates the steps shared by the developer:
 
 ## Prerequisites
 
